@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/register.js"></script>
+</head>
+<body>
+
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="Absolute-Center is-Responsive">
+                <div class="col-md-12">
+                    <form id="register-form" method="post" action="register.php">
+                        <div class="form-group">
+                            <label for="InputName">Username</label>
+                            <input type="text" class="form-control" id="InputName" name="username"
+                                   placeholder="Username" required>
+
+                            <label for="InputEmail">Email address</label>
+                            <input type="email" class="form-control" id="InputEmail" name="email"
+                                   placeholder="Enter email" required>
+
+                            <label for="InputPassword1">Password</label>
+                            <input type="password" class="form-control" id="InputPassword1" name="typepassword1"
+                                   placeholder="Password" required>
+
+                            <label for="InputPassword2">Resubmit Password</label>
+                            <input type="password" class="form-control" id="InputPassword2" name="typepassword2"
+                                   placeholder="Repeat Password" required>
+                        </div>
+                        <div class="form-group">
+                            <button id="register-submit" type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                    <span id="result"></span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="js/jquery.validationEngine.js"></script>
+<script src="js/register.js"></script>
+
+</body>
+</html>
