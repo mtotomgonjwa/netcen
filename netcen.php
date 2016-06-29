@@ -30,16 +30,10 @@
 
             <div class="col s3">
                 <p>
-                    Lorem ma nizzle dolor sizzle amet, fo shizzle adipiscing elizzle.
-                    Nullizzle sapizzle shit, sure volutpat, suscipizzle quizzle,
-                    crackalackin ass, crackalackin. Pellentesque shizznit tortizzle.
-                    Fo shizzle eros. Yippiyo fo shizzle mah nizzle fo rizzle, mah
-                    home g-dizzle dapibizzle doggy tempus . Maurizzle pellentesque
-                    nibh et break it down. Shizzle my nizzle crocodizzle izzle shit.
-                    Pellentesque crazy rhoncizzle you son of a bizzle. In dope habitasse
-                    platea dictumst. dapibus. Bow wow wow dizzle uhuh ...
-                    yih!, pretizzle dope, mattizzle things, rizzle vitae, nunc. Uhuh ...
-                    yih! hizzle. Integizzle semper velit crackalackin doggy.
+                    <?php
+                    include_once "users.php";
+                    $lstzusers = new users();
+                    $lstzusers->listUsers(); ?>
                 </p>
             </div>
 
@@ -85,15 +79,21 @@
     </div>
     <div class="divider"></div>
     <div class="section">
+        <form id="chat-form" method="post">
         <div class="form-group">
-            <label for="exampleInputEmail1">Message</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Post.........">
+            <label for="InputMessage">Message</label>
+            <input type="text" class="form-control" name="InputMessage" placeholder="Post.........">
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+            <button id="post-messages" type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <span id="post-result"></span>
     </div>
 
-</div>
 
+</div>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="js/jquery.validationEngine.js"></script>
+<script src="js/updateMessages.js"></script>
 
 </body>
 </html>

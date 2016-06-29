@@ -16,9 +16,26 @@
     padding: 40px;
 }
 
-/*Makes all buttons the same size*/
+/*Makes all buttons the same size* in login.html */
 .custom {
-    width: 94px !important;
+    width: 70px !important;
+}
+
+#login-submit {
+    margin: 0 auto;
+    float: left;
+    alignment: left;
+}
+
+#guest-submit {
+    margin-left: 14%;
+}
+
+#register-button {
+    margin: 0 auto;
+    alignment: right;
+    float: right;
+
 }
 
 /*Designing the Chat Area*/
@@ -37,4 +54,14 @@ p {
 ul#nav li {
     display: inline;
 
+}
+
+/* Login Redirect Button in Register.html*/
+
+#login-redirect {
+    margin: 0 auto;
+    alignment: right;
+    float: right;
+    font-family: "Roboto", sans-serif;
+    font-size: 9px;
 }
