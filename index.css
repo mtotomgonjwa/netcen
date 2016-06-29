@@ -16,6 +16,11 @@
     padding: 40px;
 }
 
+/*make chat conversation scrollabe*/
+#chat-conversation, #users-list {
+    overflow: scroll;
+    height: 400px;
+}
 /*Makes all buttons the same size* in login.html */
 .custom {
     width: 70px !important;

@@ -28,7 +28,7 @@
     <div class="section">
         <div class="row">
 
-            <div class="col s3">
+            <div id="users-list" class="col s3">
                 <p>
                     <?php
                     include_once "users.php";
@@ -37,7 +37,7 @@
                 </p>
             </div>
 
-            <div class="col s9">
+            <div id="chat-conversation" class="col s9">
                 <p>
                     Lorem ma nizzle dolor sizzle amet, fo shizzle adipiscing elizzle.
                     Nullizzle sapizzle shit, sure volutpat, suscipizzle quizzle,
@@ -86,7 +86,7 @@
         </div>
             <button id="post-messages" type="submit" class="btn btn-primary">Submit</button>
         </form>
-        <span id="post-result"></span>
+        <span id="post-result" </span>
     </div>
 
 
